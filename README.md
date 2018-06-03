@@ -1,27 +1,48 @@
-# Angular6UnitTest
+# Example of unit-testing an Angular 6 application
+
+Each resource must be tested in complete isolation from the rest of the world. 
+All dependencies should be mocked, e.g. when testing a component, we should not 
+relay at all on any injected services. 
+
+## Examples:
+1. Component with a custom service dependency.
+2. Custom service with Angular service dependency. 
+3. Custom service, dependent on another custom service and an Angular service.
+4. Filters.
+
+## Step #1 - Clone the project
+```
+git clone https://github.com/vmanchev/angular6-unit-test.git
+```
+
+## Step #2 - Install node/npm and karma-cli
+```
+sudo apt-get install node
+sudo npm install -g karma-cli
+```
+
+## Step #3 - Install project dependencies
+```
+npm install 
+```
+
+### To run the project:
+```
+npm start
+```
+
+### To run the tests:
+```
+npm test
+```
+
+### To generate the code coverage report:
+```
+npm run coverage
+```
+
+### Code coverage
+Find the code coverage in the ./coverage folder. Just run the index.html file in a browser.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
