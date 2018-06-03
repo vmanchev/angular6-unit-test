@@ -1,8 +1,8 @@
-import { ChangemePipe } from './changeme.pipe';
+import { ToUpperPipe } from './to-upper.pipe';
 
-describe('ChangemePipe', () => {
+describe('ToUpperPipe', () => {
 
-  const pipe = new ChangemePipe();
+  const pipe = new ToUpperPipe();
 
   it('create an instance', () => {
     expect(pipe).toBeTruthy();

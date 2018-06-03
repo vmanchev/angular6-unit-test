@@ -3,19 +3,24 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { JokeComponent } from './components/joke/joke.component';
 import { SimpleComponent } from './components/simple/simple.component';
-import { ChangemePipe } from './pipes/changeme/changeme.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { JokesService } from './providers/jokes/jokes.service';
-import { UsersService } from './providers/users/users.service';
+import { UserService } from './providers/user/user.service';
+import { ItemService } from './providers/item/item.service';
+import { ItemComponent } from './components/item/item.component';
+import { UserComponent } from './components/user/user.component';
+import { FormatAddressPipe } from './pipes/format-address/format-address.pipe';
+import { ToUpperPipe } from './pipes/to-upper/to-upper.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JokeComponent,
     SimpleComponent,
-    ChangemePipe
+    ItemComponent,
+    UserComponent,
+    FormatAddressPipe,
+    ToUpperPipe
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import { UsersService } from './providers/users/users.service';
   ],
   providers: [
     JokesService,
-    UsersService
+    UserService,
+    ItemService
   ],
   bootstrap: [
     AppComponent

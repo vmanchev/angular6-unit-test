@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { ChangemePipe } from '../../pipes/changeme/changeme.pipe';
 import { SimpleComponent } from './simple.component';
+import { ToUpperPipe } from '../../pipes/to-upper/to-upper.pipe';
 
 describe('SimpleComponent', () => {
   let component: SimpleComponent;
@@ -8,7 +8,10 @@ describe('SimpleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [SimpleComponent, ChangemePipe]
+      declarations: [
+        SimpleComponent,
+        ToUpperPipe
+      ]
     })
       .compileComponents();
   }));

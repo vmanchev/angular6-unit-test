@@ -1,7 +1,7 @@
 import { Company } from './company.model';
 
 export class User {
-  id: string;
+  id: number;
   name: string;
   email: string;
   address: any;

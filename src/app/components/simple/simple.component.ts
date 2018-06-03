@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ChangemePipe } from '../../pipes/changeme/changeme.pipe';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-simple',
@@ -7,14 +6,9 @@ import { ChangemePipe } from '../../pipes/changeme/changeme.pipe';
   styleUrls: ['./simple.component.css'],
 
 })
-export class SimpleComponent implements OnInit {
+export class SimpleComponent {
 
   private welcomeText = 'This is a simple component';
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   getWelcomeText() {
     return this.welcomeText;

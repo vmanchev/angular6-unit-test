@@ -1,0 +1,17 @@
+<div *ngIf="users.length">
+  <h4>Users</h4>
+
+  <ul>
+    <li *ngFor="let user of users">
+      <a routerLink="/user/{{user.id}}">{{ user.name }}</a>
+    </li>
+  </ul>
+
+</div>
+
+<div *ngIf="user.id">
+  <h4>{{ user.name }}</h4>
+  Email: {{user.email}}
+  <br /> Phone: {{user.phone}}
+  <br /> Address: {{ user.address | formatAddress }}
+</div>
