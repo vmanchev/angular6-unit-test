@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SimpleComponent } from './components/simple/simple.component';
 import { AppRoutingModule } from './app-routing.module';
-import { JokesService } from './providers/jokes/jokes.service';
 import { UserService } from './providers/user/user.service';
 import { ItemService } from './providers/item/item.service';
 import { ItemComponent } from './components/item/item.component';
@@ -28,7 +27,6 @@ import { ToUpperPipe } from './pipes/to-upper/to-upper.pipe';
     HttpClientModule
   ],
   providers: [
-    JokesService,
     UserService,
     ItemService
   ],

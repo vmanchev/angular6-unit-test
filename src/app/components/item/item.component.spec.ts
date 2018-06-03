@@ -52,10 +52,9 @@ describe('ItemComponent', () => {
 
       flush();
       fixture.detectChanges();
-  
-      // test only the change in public joke property
+
       expect(fixture.componentInstance.items).toEqual([ItemMock]);
-  
+
     }));
   });
 
