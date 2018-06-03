@@ -23,12 +23,4 @@ describe('NavComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // fit(`should have as title 'Angular6 unit test project'`, async(() => {
-
-  //   component.ngDoCheck();
-
-  //   const compiled = fixture.debugElement.nativeElement;
-  //   console.log(compiled.querySelectorAll('.nav-active'))
-  // }));
-
 });

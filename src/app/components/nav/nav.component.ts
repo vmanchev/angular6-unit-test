@@ -5,16 +5,13 @@ import { Component, Input, OnInit, ElementRef } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponent implements OnInit {
+export class NavComponent {
 
   private links = [];
 
   constructor(
     private el: ElementRef
   ) { }
-
-  ngOnInit() {
-  }
 
   ngDoCheck() {
     this.getAllNavItems().removeActiveClass().setActive();
