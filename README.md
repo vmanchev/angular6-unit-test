@@ -31,9 +31,14 @@ npm install
 npm start
 ```
 
-### To run the tests:
+### To run the unit tests:
 ```
 npm test
+```
+
+### To run the e2e tests:
+```
+npm run e2e
 ```
 
 ### To generate the code coverage report:

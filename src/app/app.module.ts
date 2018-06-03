@@ -11,6 +11,7 @@ import { ItemComponent } from './components/item/item.component';
 import { UserComponent } from './components/user/user.component';
 import { FormatAddressPipe } from './pipes/format-address/format-address.pipe';
 import { ToUpperPipe } from './pipes/to-upper/to-upper.pipe';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ToUpperPipe } from './pipes/to-upper/to-upper.pipe';
     ItemComponent,
     UserComponent,
     FormatAddressPipe,
-    ToUpperPipe
+    ToUpperPipe,
+    NavComponent
   ],
   imports: [
     BrowserModule,

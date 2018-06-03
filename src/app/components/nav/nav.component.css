@@ -1,0 +1,13 @@
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul li a.nav-active {
+  background: #f00;
+  color: #fff;
+}

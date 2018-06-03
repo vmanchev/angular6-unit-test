@@ -7,8 +7,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to angular6-unit-test!');
+  it('should display project name', () => {
+    page.navigateTo('/');
+    expect(page.getParagraphText()).toEqual('Angular6 unit test project');
   });
+
 });
